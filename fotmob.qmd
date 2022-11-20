@@ -1,0 +1,21 @@
+---
+title: "fotmob"
+format: html
+editor: visual
+---
+
+```{r}
+library(worldcup)
+library(worldfootballR)
+library(tidyverse)
+library(janitor)
+library(gt)
+library(gtExtras)
+```
+
+```{r}
+id <- 3370549
+get_match_team_stats(id)
+get_score(id)
+
+```

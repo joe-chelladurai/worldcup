@@ -1,0 +1,43 @@
+
+
+```{r}
+library(worldfootballR)
+library(tidyverse)
+library(janitor)
+library(gt)
+library(gtExtras)
+library(worldcup)
+```
+
+
+
+```{r}
+url <- "https://fbref.com/en/matches/bc417615/Belgium-England-July-14-2018-FIFA-World-Cup"
+```
+
+```{r}
+fb_match_report(url) %>% get_scores_from_match_report()
+```
+
+```{r}
+fb_match_report(url) %>% get_home_away_from_match_report()
+```
+
+```{r}
+match_report <- fb_match_report(url) %>%
+    get_home_away_from_match_report()
+```
+
+```{r}
+
+  
+```
+
+```{r}
+fb_match_shooting(url) %>% get_goal_attempts_from_match_shooting(url)
+```
+
+```{r}
+fb_
+```
+
