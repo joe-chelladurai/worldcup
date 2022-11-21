@@ -2,7 +2,7 @@
 
 
 get_match_team_stats <- function(id) {
-  fotmob_get_match_team_stats(id) %>%
+  worldfootballR::fotmob_get_match_team_stats(id) %>%
     select(stats_title, title, home_value, away_value) %>%
     filter(home_value != "NA") %>%
     group_by(title) %>%

@@ -3,7 +3,7 @@
 
 
 get_score <- function(id) {
-  match_result <- fotmob_get_league_matches(league_id = 77)
+  match_result <- worldfootballR::fotmob_get_league_matches(league_id = 77)
 
   a <- id
 
